@@ -7,6 +7,40 @@
 <meta name="description" content="인큐텍 그룹은 AI가 당신을 정확히 알고 추천하도록, AI 브랜딩·책·기사 세 가지로 당신과 당신의 고객을 잇는다.">
 <meta property="og:title" content="인큐텍 IncuTEK — AI 브랜딩 그룹">
 <meta property="og:description" content="AI(SEO·AEO·GEO)를 통하여 고객을 당신에게 인도합니다.">
+<meta property="og:image" content="https://www.incutek.net/incutek-group-concept_1.png">
+<meta property="og:image:width" content="2880">
+<meta property="og:image:height" content="2170">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.incutek.net/#organization",
+      "name": "인큐텍주식회사",
+      "alternateName": ["인큐텍", "IncuTEK", "IncuTEK Co., Ltd."],
+      "url": "https://www.incutek.net",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.incutek.net/favicon.svg"
+      },
+      "description": "인큐텍 그룹은 AI가 당신을 정확히 알고 추천하도록, AI 브랜딩·책·기사 세 가지로 당신과 당신의 고객을 잇는다.",
+      "address": {"@type": "PostalAddress", "addressCountry": "KR"},
+      "contactPoint": {"@type": "ContactPoint", "email": "ik@incutek.net", "contactType": "customer service"},
+      "sameAs": ["https://aibranding.kr", "https://bookebi.kr", "https://hajatoday.com"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.incutek.net/#website",
+      "url": "https://www.incutek.net",
+      "name": "인큐텍 IncuTEK — AI 브랜딩 그룹",
+      "description": "인큐텍 그룹은 AI가 당신을 정확히 알고 추천하도록, AI 브랜딩·책·기사 세 가지로 당신과 당신의 고객을 잇는다.",
+      "publisher": {"@id": "https://www.incutek.net/#organization"},
+      "inLanguage": "ko-KR"
+    }
+  ]
+}
+</script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
 <style>
 :root{
@@ -59,127 +93,13 @@ body{
 .leg-line{width:28px;height:2px;background:var(--cr);}
 .leg-line.rev{background:var(--cr); opacity:.4;}
 
-/* ── 메인 플로우 ── */
-.flow{
-  display:grid;
-  grid-template-columns: 100px 1fr 110px 1fr 100px;
-  gap:0;
-  align-items:center;
+/* ── 개념도 이미지 ── */
+.concept-img{
   margin-bottom:36px;
-  min-height:420px;
 }
-
-/* 왼쪽 당신 */
-.node-you,.node-cust{
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:8px;padding:20px 10px;
-  border:2px solid var(--bd);
-  border-radius:16px;
-  background:var(--bg2);
-  min-height:220px;
-  align-self:center;
-}
-.node-you{border-color:var(--cr);}
-.node-cust{border-color:var(--nv); background:var(--nv);}
-.node-cust *{color:#fff!important;}
-
-.node-title{font-size:18px;font-weight:900;text-align:center;line-height:1.2;}
-.node-desc{font-size:11px;text-align:center;color:var(--fg2);line-height:1.6;}
-.node-badge{
-  font-size:10px;font-weight:700;
-  padding:3px 9px;border-radius:20px;
-  margin-top:4px;
-}
-.node-you .node-badge{background:var(--cr);color:#fff;}
-.node-cust .node-badge{background:rgba(255,255,255,.2);color:#fff;}
-
-/* 중간 서비스 카드 열 */
-.svc-col{
-  display:flex;flex-direction:column;gap:10px;
-  padding:0 10px;
-  align-self:stretch;
-  justify-content:center;
-}
-.svc-card{
-  border-radius:12px;padding:14px 16px;
-  display:flex;flex-direction:column;gap:4px;
-  position:relative;
-}
-.svc-card.ai  {background:var(--cr-l); border:1.5px solid rgba(122,30,46,.2);}
-.svc-card.bk  {background:var(--gn-l); border:1.5px solid rgba(43,107,79,.2);}
-.svc-card.hj  {background:var(--am-l); border:1.5px solid rgba(122,74,30,.2);}
-
-.svc-label{font-size:9px;font-weight:700;letter-spacing:.1em;margin-bottom:2px;}
-.svc-card.ai .svc-label{color:var(--cr);}
-.svc-card.bk .svc-label{color:var(--gn);}
-.svc-card.hj .svc-label{color:var(--am);}
-
-.svc-name{font-size:14px;font-weight:900;line-height:1.3;}
-.svc-card.ai .svc-name{color:var(--cr);}
-.svc-card.bk .svc-name{color:var(--gn);}
-.svc-card.hj .svc-name{color:var(--am);}
-
-.svc-domain{font-size:10px;color:var(--fg3);}
-.svc-desc{font-size:11px;color:var(--fg2);line-height:1.6;margin-top:4px;}
-
-/* 결과 카드 열 */
-.res-col{
-  display:flex;flex-direction:column;gap:10px;
-  padding:0 10px;
-  align-self:stretch;
-  justify-content:center;
-}
-.res-card{
-  border-radius:12px;padding:14px 16px;
-  border:1.5px dashed;
-  display:flex;flex-direction:column;gap:4px;
-}
-.res-card.ai {border-color:rgba(122,30,46,.25); background:var(--cr-l);}
-.res-card.bk {border-color:rgba(43,107,79,.25);  background:var(--gn-l);}
-.res-card.hj {border-color:rgba(122,74,30,.25);  background:var(--am-l);}
-
-.res-label{font-size:9px;font-weight:700;letter-spacing:.1em;margin-bottom:2px;}
-.res-card.ai .res-label{color:var(--cr);}
-.res-card.bk .res-label{color:var(--gn);}
-.res-card.hj .res-label{color:var(--am);}
-
-.res-name{font-size:13px;font-weight:900;line-height:1.3;color:var(--fg);}
-.res-desc{font-size:11px;color:var(--fg2);line-height:1.6;margin-top:2px;}
-
-/* AI 중앙 노드 */
-.ai-node{
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:0;
-  background:var(--cr);
-  border-radius:16px;
-  padding:20px 12px;
-  color:#fff;
-  align-self:stretch;
-  min-height:260px;
-  margin:40px 0;
-}
-.ai-big{font-size:36px;font-weight:900;margin-bottom:10px;}
-.ai-subs{font-size:9px;text-align:center;opacity:.6;line-height:2;margin-bottom:16px;}
-.ai-flow{
-  display:flex;flex-direction:column;align-items:center;gap:0;
-  font-size:14px;font-weight:900;
-}
-.ai-step{padding:3px 0;line-height:1.3;}
-.ai-step.highlight{font-size:18px;color:#fff;}
-.ai-arr{font-size:10px;opacity:.5;line-height:1;}
-.ai-first{
-  font-size:9px;text-align:center;opacity:.5;
-  margin-top:10px;line-height:1.5;
-}
-
-/* ── 하단 화살표 주석 ── */
-.flow-note{
-  text-align:center;
-  font-size:11px;color:var(--fg3);
-  margin-bottom:32px;
-  padding:10px 0;
-  border-top:1px dashed var(--bd);
-  border-bottom:1px dashed var(--bd);
+.concept-img img{
+  width:100%;border-radius:12px;display:block;
+  box-shadow:0 2px 16px rgba(0,0,0,.08);
 }
 
 /* ── 한 문장 결론 ── */
@@ -218,19 +138,8 @@ body{
   line-height:1.9;
 }
 
-/* ── 모바일: 세로 스택 ── */
+/* ── 모바일 ── */
 @media(max-width:760px){
-  .flow{
-    grid-template-columns:1fr;
-    grid-template-rows:auto;
-    gap:12px;
-  }
-  .node-you,.node-cust{min-height:auto;padding:16px 20px;flex-direction:row;align-items:center;gap:14px;text-align:left;}
-  .node-title{font-size:16px;}
-  .ai-node{min-height:auto;padding:16px;margin:0;flex-direction:row;flex-wrap:wrap;gap:12px;align-items:center;justify-content:flex-start;}
-  .ai-big{font-size:28px;margin-bottom:0;}
-  .ai-flow{flex-direction:row;gap:6px;}
-  .ai-arr{display:none;}
   .title-sec{flex-direction:column;}
   .title-legend{flex-direction:row;flex-wrap:wrap;}
 }
@@ -256,82 +165,9 @@ body{
   </div>
 </div>
 
-<!-- 메인 플로우 -->
-<div class="flow">
-
-  <!-- 1열: 당신 -->
-  <div class="node-you">
-    <div class="node-title">당신</div>
-    <div class="node-desc">전문직 · 사업자<br>기업 · 기관</div>
-    <span class="node-badge">AI가 아직 모른다</span>
-  </div>
-
-  <!-- 2열: 서비스 카드 (AI에게 알린다) -->
-  <div class="svc-col">
-    <a href="https://aibranding.kr" target="_blank" rel="noopener" style="text-decoration:none;" class="svc-card ai">
-      <div class="svc-label">BRANDING · AI 브랜딩</div>
-      <div class="svc-name">AI 브랜딩 aibranding.kr</div>
-      <div class="svc-desc">AI 브랜딩(SEO·AEO·GEO)으로<br>AI에게 당신을 알린다</div>
-    </a>
-    <a href="https://bookebi.kr" target="_blank" rel="noopener" style="text-decoration:none;" class="svc-card bk">
-      <div class="svc-label">BOOK · 책</div>
-      <div class="svc-name">북깨비 bookebi.kr</div>
-      <div class="svc-desc">웹북·저자 프로이지로<br>AI가 읽을 당신의 근거를 만든다</div>
-    </a>
-    <a href="https://hajatoday.com" target="_blank" rel="noopener" style="text-decoration:none;" class="svc-card hj">
-      <div class="svc-label">MEDIA · 기사</div>
-      <div class="svc-name">하자투데이 hajatoday.com</div>
-      <div class="svc-desc">AI의 활동과 당신의 일을<br>제3자의 기사로 보도한다</div>
-    </a>
-  </div>
-
-  <!-- 3열: AI 중앙 -->
-  <div class="ai-node">
-    <div class="ai-big">AI</div>
-    <div class="ai-subs">ChatGPT · Gemini<br>Claude · Grok<br>DeepSeek · 검색엔진</div>
-    <div class="ai-flow">
-      <div class="ai-step">인지</div>
-      <div class="ai-arr">↓</div>
-      <div class="ai-step">이해</div>
-      <div class="ai-arr">↓</div>
-      <div class="ai-step highlight">추천</div>
-      <div class="ai-arr">↓</div>
-      <div class="ai-step">구매</div>
-    </div>
-    <div class="ai-first">당신의 첫 번째 고객</div>
-  </div>
-
-  <!-- 4열: 결과 카드 (AI가 추천한다) -->
-  <div class="res-col">
-    <div class="res-card ai">
-      <div class="res-label">BRANDING · AI 브랜딩</div>
-      <div class="res-name">AI 답변에서 만난다</div>
-      <div class="res-desc">고객이 「어디가 좋아?」 물으면<br>AI가 당신을 답한다</div>
-    </div>
-    <div class="res-card bk">
-      <div class="res-label">BOOK · 책</div>
-      <div class="res-name">웹북·홈페이지로 만난다</div>
-      <div class="res-desc">독자가 당신을 읽고<br>당신의 고객이 된다</div>
-    </div>
-    <div class="res-card hj">
-      <div class="res-label">MEDIA · 기사</div>
-      <div class="res-name">기사로 만난다</div>
-      <div class="res-desc">남이 쓴 글이<br>당신을 믿을 근거가 된다</div>
-    </div>
-  </div>
-
-  <!-- 5열: 당신의 고객 -->
-  <div class="node-cust">
-    <div class="node-title">당신의<br>고객</div>
-    <div class="node-desc">AI가 당신을 추천하고<br>찾아온 사람</div>
-    <span class="node-badge">당신에게 돈을 낸다</span>
-  </div>
-
-</div>
-
-<!-- 하단 주석 -->
-<div class="flow-note">
-  당신의 고객이 다시 책과 기사가 되어, AI에게 읽힌다
+<!-- 개념도 이미지 -->
+<div class="concept-img">
+  <img src="incutek-group-concept_1.png" alt="인큐텍 그룹 서비스 구조도 — AI 브랜딩·북깨비·하자투데이">
 </div>
 
 <!-- 한 문장 결론 -->
