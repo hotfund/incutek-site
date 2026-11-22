@@ -36,4 +36,5 @@
 
 ## 연관 사이트
 - aibranding.kr → www.incutek.net 으로 리디렉션
-- bookebi.kr — AI 브랜딩 도서 플랫폼
+- bookebi.kr — 웹북·저자 페이지, AI가 읽을 근거 콘텐츠 플랫폼
+- hajatoday.com — AI·브랜딩 뉴스 미디어, 인큐텍 그룹 계열 보도 채널
