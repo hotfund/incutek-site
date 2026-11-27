@@ -3,32 +3,106 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/:path*", "has": [{ "type": "host", "value": "aibranding.kr" }], "destination": "https://www.incutek.net/", "permanent": true },
-    { "source": "/:path*", "has": [{ "type": "host", "value": "www.aibranding.kr" }], "destination": "https://www.incutek.net/", "permanent": true },
-    { "source": "/", "has": [{ "type": "host", "value": "author.incutek.net" }], "destination": "https://www.bookebi.kr/author", "permanent": true },
-    { "source": "/books/ai-branding", "destination": "https://www.bookebi.kr/aibranding", "permanent": true },
-    { "source": "/books/ai-branding/:n", "destination": "https://www.bookebi.kr/aibranding/:n", "permanent": true },
-    { "source": "/:lang(en|zh|ja|es)/books/:slug", "destination": "https://www.bookebi.kr/:slug/:lang", "permanent": true },
-    { "source": "/:lang(en|zh|ja|es)/books/:slug/:n", "destination": "https://www.bookebi.kr/:slug/:lang/:n", "permanent": true },
-    { "source": "/books/:slug", "destination": "https://www.bookebi.kr/:slug", "permanent": true },
-    { "source": "/books/:slug/:n", "destination": "https://www.bookebi.kr/:slug/:n", "permanent": true },
     {
-      "source": "/:path((?!privacy$|terms$|refund$|account-deletion$|\\.well-known/|_next/|robots\\.txt$|sitemap\\.xml$|llms\\.txt$|favicon\\.svg$).+)",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "aibranding.kr"
+        }
+      ],
+      "destination": "https://www.incutek.net/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.aibranding.kr"
+        }
+      ],
+      "destination": "https://www.incutek.net/",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "author.incutek.net"
+        }
+      ],
+      "destination": "https://www.bookebi.kr/author",
+      "permanent": true
+    },
+    {
+      "source": "/books/ai-branding",
+      "destination": "https://www.bookebi.kr/aibranding",
+      "permanent": true
+    },
+    {
+      "source": "/books/ai-branding/:n",
+      "destination": "https://www.bookebi.kr/aibranding/:n",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(en|zh|ja|es)/books/:slug((?!japanyomozomo(?:/|$))[^/]+)",
+      "destination": "https://www.bookebi.kr/:slug/:lang",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(en|zh|ja|es)/books/:slug((?!japanyomozomo(?:/|$))[^/]+)/:n",
+      "destination": "https://www.bookebi.kr/:slug/:lang/:n",
+      "permanent": true
+    },
+    {
+      "source": "/books/:slug((?!japanyomozomo(?:/|$))[^/]+)",
+      "destination": "https://www.bookebi.kr/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/books/:slug((?!japanyomozomo(?:/|$))[^/]+)/:n",
+      "destination": "https://www.bookebi.kr/:slug/:n",
+      "permanent": true
+    },
+    {
+      "source": "/:path((?!japanyomozomo(?:/|$)|books/japanyomozomo(?:/|$)|(?:en|zh|ja|es)/books/japanyomozomo(?:/|$)|privacy$|terms$|refund$|account-deletion$|\\.well-known/|_next/|robots\\.txt$|sitemap\\.xml$|llms\\.txt$|favicon\\.svg$).+)",
       "destination": "https://www.bookebi.kr/:path*",
       "permanent": true
     }
   ],
   "rewrites": [
-    { "source": "/privacy", "destination": "https://www.bookebi.kr/privacy" },
-    { "source": "/terms", "destination": "https://www.bookebi.kr/terms" },
-    { "source": "/refund", "destination": "https://www.bookebi.kr/refund" },
-    { "source": "/account-deletion", "destination": "https://www.bookebi.kr/account-deletion" },
-    { "source": "/_next/:path*", "destination": "https://www.bookebi.kr/_next/:path*" }
+    {
+      "source": "/privacy",
+      "destination": "https://www.bookebi.kr/privacy"
+    },
+    {
+      "source": "/terms",
+      "destination": "https://www.bookebi.kr/terms"
+    },
+    {
+      "source": "/refund",
+      "destination": "https://www.bookebi.kr/refund"
+    },
+    {
+      "source": "/account-deletion",
+      "destination": "https://www.bookebi.kr/account-deletion"
+    },
+    {
+      "source": "/_next/:path*",
+      "destination": "https://www.bookebi.kr/_next/:path*"
+    }
   ],
   "headers": [
     {
       "source": "/.well-known/assetlinks.json",
-      "headers": [{ "key": "Content-Type", "value": "application/json" }]
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
     }
   ]
 }
