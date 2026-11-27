@@ -67,7 +67,7 @@
       "permanent": true
     },
     {
-      "source": "/:path((?!japanyomozomo(?:/|$)|books/japanyomozomo(?:/|$)|(?:en|zh|ja|es)/books/japanyomozomo(?:/|$)|privacy$|terms$|refund$|account-deletion$|\\.well-known/|_next/|robots\\.txt$|sitemap\\.xml$|llms\\.txt$|favicon\\.svg$).+)",
+      "source": "/:path((?!blog(?:/|$)|japanyomozomo(?:/|$)|books/japanyomozomo(?:/|$)|(?:en|zh|ja|es)/books/japanyomozomo(?:/|$)|privacy$|terms$|refund$|account-deletion$|\\.well-known/|_next/|robots\\.txt$|sitemap\\.xml$|llms\\.txt$|favicon\\.svg$).+)",
       "destination": "https://www.bookebi.kr/:path*",
       "permanent": true
     }
